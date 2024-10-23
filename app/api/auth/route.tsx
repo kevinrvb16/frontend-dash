@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import jwt from 'jsonwebtoken';
-
+require('dotenv').config();
 const JWT_SECRET = process.env.JWT_SECRET;
 
 export async function POST(request: Request) {
